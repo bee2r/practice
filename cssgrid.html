@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> working with grid</title>
+        <style>
+            body{
+               
+                font-family: Montserrat;
+                text-align: center;
+                background-color: aqua;
+            }
+            #content{
+                display:grid;
+                grid-template-columns: 1fr 1fr 2fr;
+                grid-auto-rows:minmax (200px, auto);
+                max-width: 1000px;
+                max-height: 2000px;
+                margin: 20px;
+                padding: 10px;
+            }
+            #content div:nth-child(even) {
+                background-color: blueviolet;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <header> </header>
+            <nav> </nav>
+            <main> </main>
+            <aside> </aside>
+            <footer> </footer>
+        </div>
+    </body>
+</html>
